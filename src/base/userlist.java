@@ -20,7 +20,7 @@ public class userlist extends HttpServlet {
         String sql = "INSERT INTO people VALUES (null,?,?)";
         Connection con = null;
         PreparedStatement pre = null;
-        //ResultSet resultSet = null;
+        ResultSet resultSet = null;
         try {
             Class.forName(driver);
             con = DriverManager.getConnection(URL, USERNAME, PASSWORD);
