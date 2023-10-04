@@ -21,6 +21,7 @@ public class userlist extends HttpServlet {
         Connection con = null;
         PreparedStatement pre = null;
         //ResultSet resultSet = null;
+        //测试2
         try {
             Class.forName(driver);
             con = DriverManager.getConnection(URL, USERNAME, PASSWORD);
